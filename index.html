@@ -8,10 +8,42 @@
   <body>
     <h1>First JS code</h1>
     <script>
-      function sayHello(name) {
-        alert("Hello" + name);
+      // Objects:
+      let dog = {
+        name: "Charlie",
+        age: 8,
+        paralized: false,
+        sleep(where) {
+          console.log("The dog is sleeping" + where);
+        },
+        owner: {
+          name: "Sandy",
+          age: 33,
+        },
+      };
+
+      console.log("dog");
+
+      /**
+      // Övning:
+
+      function sumAdd(numberOne, numberTwo) {
+        return numberOne + numberTwo;
       }
+      let sum = sumAdd(5, 20);
+
+      function concatStrings(sumAnswer, sumString) {
+        console.log(sumString + sumAnswer);
+      }
+
+      concatStrings(sumAdd, "Summan blir:");
+
+      let sumAdd = function sayHello(name) {
+        alert("Hello" + name);
+      };
       sayHello("sandra");
+
+      */
     </script>
   </body>
 </html>
